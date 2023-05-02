@@ -1,14 +1,15 @@
 {
+  "verbose": true,
   "restartable": "rs",
   "ignore": [
     ".git",
     "node_modules/**/node_modules"
   ],
   "execMap": {
-    "ts": "tsc -w -p ./"
+    "ts": "ts-node"
   },
   "watch": [
-    "src/**/*.ts"
+    "src/"
   ],
   "ext": "ts"
 }

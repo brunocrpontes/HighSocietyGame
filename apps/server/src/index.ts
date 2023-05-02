@@ -16,4 +16,5 @@ router.get("/ping", (context) => {
 App
   .use(router.routes())
   .use(router.allowedMethods())
+  .on("error", () => console.log("Error"))
   .listen(3002, () => console.log("Server Listening on port 3002"))
